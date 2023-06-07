@@ -9,7 +9,7 @@ Welcome to the "js-functions-lab" repository! This repository contains JavaScrip
 1. Clone the repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/your-username/js-functions-lab.git
+   git clone https://github.com/whuang214/js-functions-lab.git
    ```
    
 2. Navigate to the project directory:
