@@ -8,7 +8,7 @@ console.log(maxOfTwoNumbers(99, 100)); // expect 100
 
 // 2.
 function maxOfThree(x, y, z) {
-    return x >= y && x >= z ? x : y >= x && y >= z ? y : z >= x && z >= y ? z : "All numbers are equal";
+    return x >= y && x >= z ? x : y >= x && y >= z ? y : z;
 }
 console.log(maxOfThree(49, 50, 51));
 
@@ -73,3 +73,15 @@ function stringsLongerThan(arr, len) {
     return returnArr;       
 }
 console.log(stringsLongerThan(["hello", "goodbye", "hi", "bye"], 3)); // should return ["hello", "goodbye"]
+
+module.exports = {
+    maxOfTwoNumbers,
+    maxOfThree,
+    isCharAVowel,
+    sumArray,
+    multiplyArray,
+    numArgs,
+    reverseString,
+    longestStringInArray,
+    stringsLongerThan
+};
