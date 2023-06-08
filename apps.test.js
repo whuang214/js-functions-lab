@@ -96,8 +96,14 @@ describe("longestStringInArray", () => {
     );
   });
 
+  test("same length test", () => {
+    expect(longestStringInArray(["days", "good", "pops", "corn"])).toBe(
+      "days"
+    );
+  });
+
   test("empty array test", () => {
-    expect(longestStringInArray([])).toBe("");
+    expect(longestStringInArray([])).toBe(null);
   });
 });
 

@@ -52,25 +52,28 @@ function reverseString(str) {
 
 // 8.
 function longestStringInArray(arr) {
-    let longest = "";
-    for (const str of arr) {
-        if (str.length > longest.length) {
-            longest = str;
-        }
-    }
-    return longest;
+    // let longest = "";
+    // for (const str of arr) {
+    //     if (str.length > longest.length) {
+    //         longest = str;
+    //     }
+    // }
+    // return longest;
+    return arr.length !== 0 ? arr.filter(str => str.length === Math.max(...arr.map(str => str.length)))[0] : null;
 }
 console.log(longestStringInArray(["hello", "goodbye", "hi", "bye"])); // should return "goodbye"
 
 // 9. 
 function stringsLongerThan(arr, len) {
-    let returnArr = [];
-    for (const str of arr) {
-        if (str.length > len) {
-            returnArr.push(str);
-        }
-    }
-    return returnArr;       
+    // let returnArr = [];
+    // for (const str of arr) {
+    //     if (str.length > len) {
+    //         returnArr.push(str);
+    //     }
+    // }
+    // return returnArr;       
+    
+    return arr.filter(str => str.length > len);
 }
 console.log(stringsLongerThan(["hello", "goodbye", "hi", "bye"], 3)); // should return ["hello", "goodbye"]
 
